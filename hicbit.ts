@@ -1538,9 +1538,9 @@ namespace hicbit {
     /**
      * Get DHT11 temperature and humidity value.
      */
-    //% weight=30  blockId=get_DHT11_value block="DHT11 set port %port|get %dhtResult"
+    //% weight=30  blockId=get_DHT11_value1 block="DHT11 set port %port|get %dhtResult"
     /*
-    export function get_DHT11_value(port: hicbit_PhotosensitiveSensor, dhtResult: Dht11Result): number {
+    export function get_DHT11_value1(port: hicbit_PhotosensitiveSensor, dhtResult: Dht11Result): number {
         let pin_arg: DigitalPin;
         switch (port) {
             case hicbit_PhotosensitiveSensor.port1:
@@ -1586,7 +1586,7 @@ namespace hicbit {
      * get dht11 temperature and humidity Value
      **/
     //% weight=30 blockId="get_DHT11_value" block="DHT11 set port %port|get %dhtResult"
-    export function get_DHT11_value( port: hicbit_PhotosensitiveSensor,dhtResult: Dht11Result): number {
+    export function get_DHT11_value(port: hicbit_PhotosensitiveSensor,dhtResult: Dht11Result): number {
         let dht11pin: DigitalPin;
         switch (port) {
             case hicbit_PhotosensitiveSensor.port1:
